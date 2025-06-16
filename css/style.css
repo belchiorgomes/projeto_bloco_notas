@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem;
+    border-block-end: 2px solid #000;
+    display: flex;
+}
+
+header .container_btn{
+    position: relative;
+    flex: 0 0 200px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+header .container_btn .inputColor{
+    position: relative;
+    width: 50px;
+    height: 100%;
+}
+
+header .container_btn input[type="color"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+header .container_btn #customizarInputColor{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+header .container_btn #customizarInputColor:hover{
+    background-color: #000;
+}
+
+header .container_btn .btnButton{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.containerBlocos{
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+.containerBlocos .notasDinamicas{
+    position: absolute;
+    top: 120px;
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+    padding: 12px;
+    border: 2px solid #000;
+    margin: 12px;
+}
