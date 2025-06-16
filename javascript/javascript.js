@@ -10,3 +10,4 @@ customizarInputColor.addEventListener('click', function(){
 });
 
 customizarInputColor.style.backgroundColor = inputColor.value;
+
